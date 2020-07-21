@@ -1,0 +1,52 @@
+{
+  "name": "app-training",
+  "version": "0.1.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phiatoshiai/app-training.git"
+  },
+  "keywords": [
+    "devebot",
+    "devebot-plugin"
+  ],
+  "dependencies": {
+    "app-datastore": "^0.3.1",
+    "app-errorlist": "^0.3.0",
+    "app-tracelog": "^0.3.0",
+    "devebot": "^0.3.0"
+  },
+  "deprecated": false,
+  "description": "Devebot training app",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-minify-mangle-names": "^0.3.0",
+    "babel-preset-env": "^1.6.1",
+    "mocha": "^4.1.0"
+  },
+  "files": [
+    "bin/",
+    "config/",
+    "data/",
+    "lib/"
+  ],
+  "peerDependencies": {
+    "devebot": "^0.3.0",
+    "app-datastore": "^0.3.1",
+    "app-errorlist": "^0.3.0",
+    "app-tracelog": "^0.3.0"
+  },
+  "scripts": {
+    "test": "mocha ./test/tdd/*test.js",
+    "eslint": "eslint ./lib/**/*.js --quiet"
+  },
+  "author": "kinz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phiatoshiai/app-training/issues"
+  },
+  "homepage": "https://github.com/phiatoshiai/app-training#readme"
+}
